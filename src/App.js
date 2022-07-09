@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
 import './App.css';
 
 function App() {
+  const [unicornSize, setUnicornSize] = useState(1);
+  const [lionSize, setLionSize] = useState(1);
+  const [isOpen, SsetIsOpen] = useState(false);
+  const [animalArray, setAnimalArray] = useState(['rhino', 'giraffe', 'camel']);
+
+
+  function handleAddRhino() {
+    setAnimalArray([...animalArray, 'rhino']);
+  }
+
+  function handleAddGiraffe() {
+    setAnimalArray([...animalArray, 'giraffe']);
+  }
+
+  function handleAddCamel() {
+    setAnimalArray([...animalArray, 'camel']);
+  }
+
+  function removeLastAnimal() {
+    setAnimalArray(animalArray.slice(0, animalArray.length - 1));
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+      <section className='duel'>
+        <div className='unicorn'>
+          <p style={unicornStyle}>🦄</p>
+        </div>
+
+      </section>
     </div>
   );
 }
