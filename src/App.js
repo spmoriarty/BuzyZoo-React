@@ -8,6 +8,15 @@ function App() {
   const [isOpen, SsetIsOpen] = useState(false);
   const [animalArray, setAnimalArray] = useState(['rhino', 'giraffe', 'camel']);
 
+  const unicornStyle = {
+    fontSize: `${unicornSize}rem`,
+    background: 'orange',
+  };
+
+  const lionStyle = {
+    fontSize: `${lionSize}rem`,
+    background: 'black',
+  };
 
   function handleAddRhino() {
     setAnimalArray([...animalArray, 'rhino']);
