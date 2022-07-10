@@ -40,8 +40,14 @@ function App() {
       <section className='duel'>
         <div className='unicorn'>
           <p style={unicornStyle}>🦄</p>
+          <button onClick={() => setUnicornSize(unicornSize + 1)}>Feed Unicorn</button>
+          <button onClick={() => setUnicornSize(unicornSize - 1)}> Unicorn hoofs the lion!</button>
         </div>
-
+        <div className='lion'>
+          <p style={lionStyle}>🦁</p>
+          <button onClick={() => setLionSize(lionSize + 1)}>Feed Lion</button>
+          <button onClick={() => setLionSize(lionSize - 1)}> Lion claws the Unicorn!</button>
+        </div>
       </section>
     </div>
   );
