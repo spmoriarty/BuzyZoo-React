@@ -1,5 +1,5 @@
 import React from 'react';
-import AnimalIcons from './animals';
+import AnimalIcons from './Animals';
 
 export default function Spectator(props) {
   return <div>
