@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import Spectator from './Spectators';
 import './App.css';
+import Sign from './Sign';
 
 function App() {
   const [unicornSize, setUnicornSize] = useState(1);
   const [lionSize, setLionSize] = useState(1);
-  const [isOpen, SsetIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [animalArray, setAnimalArray] = useState(['rhino', 'giraffe', 'camel']);
 
   const unicornStyle = {
@@ -50,8 +51,10 @@ function App() {
         </div>
       </section>
       <div className='sign'>
+        <Sign isOpen={isOpen} />
         <section>
-          
+          <button onClick={() => setIsOpen(false)}>The fight is on!</button>
+          <button onClick={() => setIsOpen(true)}>The fight is delayed.</button>
         </section>
       </div>
 
