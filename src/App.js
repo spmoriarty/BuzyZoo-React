@@ -57,6 +57,7 @@ function App() {
           <button onClick={handleAddRhino}>Add Rhino</button>
           <button onClick={handleAddGiraffe}>Add Giraffe</button>
           <button onClick={handleAddCamel}>Add Camel</button>
+          <button onClick={removeLastAnimal}>Animal got to close</button>
         </div>
       </section>
 
