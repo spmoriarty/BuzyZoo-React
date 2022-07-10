@@ -49,6 +49,11 @@ function App() {
           <button onClick={() => setLionSize(lionSize - 1)}> Lion claws the Unicorn!</button>
         </div>
       </section>
+      <div className='sign'>
+        <section>
+          
+        </section>
+      </div>
 
       <section className='spectators'>
         <h3>Animals gather to watch the spectacle</h3>
