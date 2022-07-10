@@ -3,12 +3,9 @@ export default function Sign(props) {
   
     <>
       <div> {props.isOpen
-        ? 'Get it On' : 'Show time later'}
+        ? 'Show time later' : 'Get it On'}
       </div>
-      <div>
-        {props.isOpen && 'this shows only is props.isOpen is truthy'}
-        {props.isOpen || 'this shows only is props.isOpen is falsey'}
-      </div>
+
     </>
   );
 }
