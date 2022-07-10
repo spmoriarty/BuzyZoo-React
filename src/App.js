@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import Spectator from './Spectators';
 import './App.css';
 
 function App() {
@@ -51,11 +51,15 @@ function App() {
       </section>
 
       <section className='spectators'>
-        <div>The animals coming to watch</div>
-        <button onClick={handleAddRhino}>Add Rhino</button>
-        <button onClick={handleAddGiraffe}>Add Giraffe</button>
-        <button onClick={handleAddCamel}>Add Camel</button>
+        <h3>Animals gather to watch the spectacle</h3>
+        <Spectator animalArray={animalArray} />
+        <div>
+          <button onClick={handleAddRhino}>Add Rhino</button>
+          <button onClick={handleAddGiraffe}>Add Giraffe</button>
+          <button onClick={handleAddCamel}>Add Camel</button>
+        </div>
       </section>
+
     </div>
   );
 }
