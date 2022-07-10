@@ -52,7 +52,7 @@ function App() {
 
       <section className='spectators'>
         <div>The animals coming to watch</div>
-        <button onClick={handleAddCamel}>Add Rhino</button>
+        <button onClick={handleAddRhino}>Add Rhino</button>
         <button onClick={handleAddGiraffe}>Add Giraffe</button>
         <button onClick={handleAddCamel}>Add Camel</button>
       </section>
